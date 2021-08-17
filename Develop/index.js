@@ -1,55 +1,68 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generate = require('./utils/generateMarkdown.js')
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
+const licenseOptions = [
+    'GNU AGPLv3',
+    'GNU GPLv2',
+    'GNU GPLv3',
+    'GNU LGPLv3',
+    'Mozilla Public License 2.0',
+    'Apache License 2.0',
+    'MIT License',
+    'Boost Software LIcense 1.0',
+    'The Unlicense',
+    'ISC License'
+]
 // TODO: Create an array of questions for user input
-const userCriteria= [    
+const questions = [    
     {
-    type : 'input',
-    name : 'title',
-    message: 'What is the title of this application?'
+        type: 'input',
+        name: 'title',
+        message: 'What is the title of this application?'
     },
     {
-    type : 'input',
-    name : 'description',
-    message: 'What is a short description of this application?'
+        type: 'list',
+        name: 'license',
+        message: 'What license does the application use?',
+        choices: licenseOptions
     },
     {
-    type : 'input',
-    name : 'tableOfContents',
-    message: 'What would you like your Table of Contents to contain?'
+        type: 'input',
+        name: 'description',
+        message: 'What is a short description of this application?'
     },
     {
-    type : 'input',
-    name : 'installation',
-    message: 'What steps are required for installing this application?'
+        type: 'input',
+        name: 'installation',
+        message: 'What steps are required for installing this application?'
     },
     {
-    type : 'input',
-    name : 'usage',
-    message: 'How do you use the application?'
+        type: 'input',
+        name: 'usage',
+        message: 'How do you use the application?'
     },
     {
-    type : 'input',
-    name : 'license',
-    message: 'What license does the application use?'
+        type: 'input',
+        name: 'contributions',
+        message: 'Who contributed to this application?'
     },
     {
-    type : 'input',
-    name : 'contributing',
-    message: 'Who contributed to this application?'
+        type: 'input',
+        name: 'tests',
+        message: 'How do you run tests for this software?'
     },
     {
-    type : 'input',
-    name : 'tests',
-    message: 'How do you run tests for this software?'
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?'
     },
     {
-    type : 'input',
-    name : 'questions',
-    message: 'Any questions?'
-    },
+        type: 'input',
+        name: 'github',
+        message: 'What is your Github username?'
+    }
 ];
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for information about my application repository
@@ -67,32 +80,18 @@ const userCriteria= [
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
 
-
-
-
-
-
 // TODO: Create a function to write README file
-function criteriaWriteUp(fileName, data) {
-    fs.writeFile('readme-file.txt', readMeContent, (err) => {
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
         err ? console.log(err) : console.log('Success!');
     });
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(userCriteria).then((userCriteria) => {
-        let data = `# ${userCriteria.title}`;
-        data += `\n## Description\n ${userCriteria.description}`;
-        data += `\n## Table of Contents\n ${userCriteria.tableOfContents}`;
-        data += `\n## Installation\n ${userCriteria.installation}`;
-        data += `\n## Usage\n ${userCriteria.usage}`;
-        data += `\n## License\n ${userCriteria.license}`;
-        data += `\n## Contributions\n ${userCriteria.contributing}`;
-        data += `\n## Testing\n ${userCriteria.tests}`;
-        data += `\n## Questions\n ${userCriteria.questions}`;
-
-        criteriaWriteUp('README.md', data);
+    inquirer.prompt(questions)
+      .then((data) => {
+          writeToFile('README.md', generateMarkdown(data));
     });
 }
 
