@@ -38,8 +38,10 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  <a href="mailto:${data.email}">${data.email}</a>
-  <a href="https://github.com/${data.github}" target="_blank">${data.github}</a>
+
+  For any questions, don't hesitate to reach out!\n
+  Email: <a href="mailto:${data.email}">${data.email}</a>
+  Github: <a href="https://github.com/${data.github}" target="_blank">${data.github}</a>
 `;
 }
 
