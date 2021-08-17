@@ -13,9 +13,10 @@ function renderLicenseSection(license) {}
 // Generates Markdown the way I want it with user input
 function generateMarkdown(data) {
   return `
-  https://img.shields.io/badge/license-${data.license}-blue
-
   # ${data.title}
+
+  ![license](https://img.shields.io/badge/license-${data.license}-blue?style=plastic&logo=appveyor)
+
   ## Table of Contents
   -[Description](#description)\n
   -[Installation](#installation)\n
@@ -45,8 +46,8 @@ function generateMarkdown(data) {
   ## Questions
 
   For any questions, don't hesitate to reach out!\n
-  Email: <a href="mailto:${data.email}">${data.email}</a>\n
-  Github: <a href="https://github.com/${data.github}">https://github.com/${data.github}</a>
+  Email: <${data.email}>\n
+  Github: <https://github.com/${data.github}>
 `;
 }
 

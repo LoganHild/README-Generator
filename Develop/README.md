@@ -1,7 +1,8 @@
 
-  ![md](https://img.shields.io/badge/license-MIT-blue?style=plastic&logo=appveyor)
+  # README=generator
 
-  # README-Generator
+  ![license](https://img.shields.io/badge/license-MIT-blue?style=plastic&logo=appveyor)
+
   ## Table of Contents
   -[Description](#description)
 
@@ -17,13 +18,13 @@
 
 
   ## Description
-  Easy to use generator for creating professional README.md files via the command line
+  Easy to use application for generating professional README.md files via the command line
 
   ## Installation
   npm i
 
   ## Usage
-  Watch Video walkthrough! After npm i has been used to install dependencies, use node index.js to activate the prompts in the command line. Answer each question to create the README.md file. Once all have been answered the user will notice a success message in the command line and the generated README.md file will appear in the application folder. The User can then copy and paste wherever the file is needed for any application.
+  Watch instructional video! Use npm i to install dependencies then use node index.js to begin the prompts in the command line. Answer each question to add it to the completed README.md file. Once all are answered, a success message will appear in the command line and the README.md file will appear in the application folder. The user can then copy this file to any application they would like!
 
   ## License
   MIT
@@ -38,6 +39,6 @@
 
   For any questions, don't hesitate to reach out!
 
-  Email: <a href="mailto:hildebrandtlogan@gmail.com">hildebrandtlogan@gmail.com</a>
+  Email: <hildebrandtlogan@gmail.com>
 
-  Github: <a href="https://github.com/LoganHild">https://github.com/LoganHild</a>
+  Github: <https://github.com/LoganHild>
