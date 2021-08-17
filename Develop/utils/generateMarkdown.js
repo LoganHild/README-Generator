@@ -10,7 +10,7 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+// Generates Markdown the way I want it with user input
 function generateMarkdown(data) {
   return `
   https://img.shields.io/badge/license-${data.license}-blue
@@ -33,6 +33,9 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
+  ## License
+  ${data.license}
+
   ## Contributions
   ${data.contributions}
 
@@ -47,4 +50,5 @@ function generateMarkdown(data) {
 `;
 }
 
+// exports to index file
 module.exports = generateMarkdown;

@@ -1,21 +1,22 @@
-// TODO: Include packages needed for this application
+// Packages needed for application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
+// array of all license options I could find from choose a license website
 const licenseOptions = [
     'GNU AGPLv3',
     'GNU GPLv2',
     'GNU GPLv3',
     'GNU LGPLv3',
-    'Mozilla Public License 2.0',
-    'Apache License 2.0',
-    'MIT License',
-    'Boost Software LIcense 1.0',
+    'Mozilla Public 2.0',
+    'Apache 2.0',
+    'MIT',
+    'Boost Software 1.0',
     'The Unlicense',
-    'ISC License'
+    'ISC'
 ]
-// TODO: Create an array of questions for user input
+// array of objects, questions for user prompts
 const questions = [    
     {
         type: 'input',
@@ -80,14 +81,14 @@ const questions = [
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
 
-// TODO: Create a function to write README file
+// Writes the readme.md file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         err ? console.log(err) : console.log('Success!');
     });
 }
 
-// TODO: Create a function to initialize app
+// initialized function, gets everything in motion
 function init() {
     inquirer.prompt(questions)
       .then((data) => {
