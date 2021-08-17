@@ -1,44 +1,40 @@
 
-  # README	
+  https://img.shields.io/badge/license-GNU AGPLv3-blue
+
+  # 
   ## Table of Contents
-  
--[Description](#description)
+  -[Description](#description)
 
-  
--[Installation](#installation)
+  -[Installation](#installation)
 
-  
--[Usage](#usage)
+  -[Usage](#usage)
 
-  
--[Contributions](#contributions)
+  -[Contributions](#contributions)
 
-  
--[Tests](#tests)
+  -[Tests](#tests)
 
-  
--[Questions](#questions)
+  -[Questions](#questions)
 
 
   ## Description
-  Works
+  
 
   ## Installation
-  Hellow
+  
 
   ## Usage
-  Pizza
+  
 
   ## Contributions
-  Logan
+  
 
   ## Tests
-  Stop
+  
 
   ## Questions
 
   For any questions, don't hesitate to reach out!
 
-  Email: <a href="mailto:hildebrandtlogan@gmail.com">hildebrandtlogan@gmail.com</a>
+  Email: <a href="mailto:"></a>
 
-  Github: <a href="https://github.com/LoganHild">LoganHild</a>
+  Github: <a href="https://github.com/">https://github.com/</a>
