@@ -4,17 +4,16 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // array of all license options I could find from choose a license website
-const licenseOptions = [
+const Options = [
+    'MIT License',    
+    'Apache License 2.0',
     'GNU AGPLv3',
-    'GNU GPLv2',
     'GNU GPLv3',
     'GNU LGPLv3',
-    'Mozilla Public 2.0',
-    'Apache 2.0',
-    'MIT',
-    'Boost Software 1.0',
+    'Mozilla Public License 2.0',
+    'Boost Software License 1.0',
     'The Unlicense',
-    'ISC'
+    'None'
 ]
 // array of objects, questions for user prompts
 const questions = [    
@@ -27,7 +26,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license does the application use?',
-        choices: licenseOptions
+        choices: Options
     },
     {
         type: 'input',
@@ -63,7 +62,7 @@ const questions = [
         type: 'input',
         name: 'github',
         message: 'What is your Github username?'
-    }
+    },
 ];
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for information about my application repository
@@ -93,7 +92,7 @@ function init() {
     inquirer.prompt(questions)
       .then((data) => {
           writeToFile('README.md', generateMarkdown(data));
-    });
+        });
 }
 
 // Function call to initialize app
