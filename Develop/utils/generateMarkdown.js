@@ -4,7 +4,7 @@ function renderLicenseBadge(data) {
   if (license !== 'None') {
     switch(license) {
       case 'MIT License':
-        return `![License](https://img.shields.io/badge/license-${data.license.replace('/s', 'nbsp')}-success?style=plastic&logo=appveyor)`;
+        return `![License](https://img.shields.io/badge/license-${data.license.replace(' ', '')}-success?style=plastic&logo=appveyor)`;
       case 'Apache License 2.0':
         return `![License](https://img.shields.io/badge/license-${data.license}-yellow?style=plastic&logo=appveyor)`;
       case 'GNU AGPLv3':
@@ -24,7 +24,7 @@ function renderLicenseBadge(data) {
     return '';
   }
 }
-
+//renders the License section in the TOC
 function renderLicenseNav(data) {
   let license = `${data.license}`;
   if (license !== 'None') {
@@ -111,5 +111,4 @@ function generateMarkdown(data) {
 `;
 }
 
-// exports to index file
 module.exports = generateMarkdown;
