@@ -1,5 +1,5 @@
 
-  # README-Generator
+  # README=Generator
 
   ![License](https://img.shields.io/badge/license-MITLicense-success?style=plastic&logo=appveyor)
 
@@ -20,21 +20,22 @@
 
 
   ## Description
-  Easy to use generator for creating professional README.md files.
+  Easy to use generator for professional README.md files.
 
   ## Installation
-  npm i node index.js
+  npm i, node index.js
 
   ## Usage
-  answer the prompts to create your readme.md file
+  use npm i, node index.js, answer prompts in command line, generate file
 
   ## License
  
   MIT License
+
   <https://choosealicense.com/licenses/mit/>
 
   ## Contributions
-  Logan
+  Logan Hildebrandt
 
   ## Tests
   N/A
