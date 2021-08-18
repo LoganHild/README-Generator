@@ -25,6 +25,15 @@ function renderLicenseBadge(data) {
   }
 }
 
+function renderLicenseNav(data) {
+  let license = `${data.license}`;
+  if (license !== 'None') {
+    return `-[License](#license)\n`
+  } else {
+    return '';
+  }
+}
+
 // returns different license links for selected license, returns empty string for none
 function renderLicenseLink(data) {
   let license = `${data.license}`;
@@ -72,6 +81,7 @@ function generateMarkdown(data) {
   -[Description](#description)\n
   -[Installation](#installation)\n
   -[Usage](#usage)\n
+  ${renderLicenseNav(data)}
   -[Contributions](#contributions)\n
   -[Tests](#tests)\n
   -[Questions](#questions)\n
