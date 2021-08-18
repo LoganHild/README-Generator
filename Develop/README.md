@@ -23,10 +23,10 @@
   Easy to use generator for creating professional README.md files.
 
   ## Installation
-  npm i, node index.js
+  npm i
 
   ## Usage
-  Watch the Video! Use npm i, then node index.js, answer prompts, generate README.md file.
+  Watch the Video! use npm i, then node index.js, answer the prompts, and generate file.
 
   ## License
  
