@@ -1,7 +1,7 @@
 
   # README=generator
 
-  ![license](https://img.shields.io/badge/license-MIT-blue?style=plastic&logo=fork)
+  ![license](https://img.shields.io/badge/license-MIT-blue?style=plastic&logo=appveyor)
 
   ## Table of Contents
   -[Description](#description)
