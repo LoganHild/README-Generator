@@ -1,7 +1,7 @@
 
   # README=generator
 
-  ![license](https://img.shields.io/badge/license-MIT-blue?style=plastic&logo=appveyor)
+  ![license](https://img.shields.io/badge/license-MIT-blue?style=plastic&logo=https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2FFortAwesome%2FFont-Awesome%2Fissues%2F14803&psig=AOvVaw329ajtgPWCkcXj2Fn76D2P&ust=1629332691732000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLCC5LWnufICFQAAAAAdAAAAABAD)
 
   ## Table of Contents
   -[Description](#description)
