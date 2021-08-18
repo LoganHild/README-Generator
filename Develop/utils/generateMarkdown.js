@@ -4,7 +4,7 @@ function renderLicenseBadge(data) {
   if (license !== 'None') {
     switch(license) {
       case 'MIT License':
-        return `![License](https://img.shields.io/badge/license-${data.license.replace(' ', 'nbsp')}-success?style=plastic&logo=appveyor)`;
+        return `![License](https://img.shields.io/badge/license-${data.license.replace('/s', 'nbsp')}-success?style=plastic&logo=appveyor)`;
       case 'Apache License 2.0':
         return `![License](https://img.shields.io/badge/license-${data.license}-yellow?style=plastic&logo=appveyor)`;
       case 'GNU AGPLv3':
