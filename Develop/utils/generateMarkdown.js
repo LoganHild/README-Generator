@@ -55,7 +55,7 @@ function renderLicenseLink(data) {
 function renderLicenseSection(data) {
   let license = `${data.license}`;
   if (license !== 'None') {
-    return `## License\n  ${data.license}`;
+    return `## License\n \n  ${data.license}`;
   } else {
     return '';
   }
@@ -84,8 +84,9 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
+
   ${renderLicenseSection(data)}
-  ${renderLicenseLink(data)}
+  ${renderLicenseLink(data)}\n
   ## Contributions
   ${data.contributions}
 
