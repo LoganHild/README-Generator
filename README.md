@@ -20,13 +20,14 @@
 
 
   ## Description
-  Easy to use generator for creating quality README.md files via the command line.
+  Easy to use generator for creating quality README.md files via the command line.\n 
+  Fun Fact: I used this generator to create the README.md file you are looking at right now as well!
 
   ## Installation
   Use <code>npmi</code> to download dependencies for this application. Then use <code>node index.js</code> to begin running the prompts for generating the README.md file content
 
   ## Usage
-  Watch my instructional video for how to install dependencies and how to use this application, along with an example of the finished product shown in the video and located in the   Develop folder of this repo./n 
+  Watch my instructional video for how to install dependencies and how to use this application, along with an example of the finished product shown in the video and located in the   Develop folder of this repo.\n 
   Instructional Video: https://drive.google.com/file/d/17RJwD8Kr8-rPyVb5JFYy7BMoIy70tgyI/view
 
   ## License
