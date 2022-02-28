@@ -51,3 +51,5 @@
   Email: <hildebrandtlogan@gmail.com>
 
   Github: <https://github.com/LoganHild>
+  
+  LinkedIn: <https://www.linkedin.com/in/loganahildebrandt/>
